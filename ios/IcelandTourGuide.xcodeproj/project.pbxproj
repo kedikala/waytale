@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0010001 /* IcelandTourGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020001 /* IcelandTourGuideApp.swift */; };
+		A0010002 /* Models/GuideModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020002 /* Models/GuideModels.swift */; };
+		A0010003 /* Data/TripData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020003 /* Data/TripData.swift */; };
+		A0010004 /* Services/POIEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020004 /* Services/POIEngine.swift */; };
+		A0010005 /* Services/LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020005 /* Services/LocationManager.swift */; };
+		A0010006 /* Services/BackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020006 /* Services/BackendClient.swift */; };
+		A0010007 /* Services/NarrationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020007 /* Services/NarrationCache.swift */; };
+		A0010008 /* Services/AudioGuideService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020008 /* Services/AudioGuideService.swift */; };
+		A0010009 /* Services/VoiceQuestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020009 /* Services/VoiceQuestionService.swift */; };
+		A0010010 /* ViewModels/TourGuideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020010 /* ViewModels/TourGuideViewModel.swift */; };
+		A0010011 /* Views/DriveModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020011 /* Views/DriveModeView.swift */; };
+		A0010012 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020012 /* AppConfiguration.swift */; };
+		A0010013 /* POIEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020015 /* POIEngineTests.swift */; };
+		A0010014 /* NarrationCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020016 /* NarrationCacheTests.swift */; };
+		A0010015 /* BackendClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020019 /* BackendClientTests.swift */; };
+		A0010016 /* Services/RealtimeGuideService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020020 /* Services/RealtimeGuideService.swift */; };
+		A0010017 /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = A0120001 /* WebRTC */; };
+		A0010018 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = A0120002 /* GoogleMaps */; };
+		A0010019 /* GoogleNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = A0120003 /* GoogleNavigation */; };
+		A0010021 /* Services/GoogleNavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020021 /* Services/GoogleNavigationService.swift */; };
+		A0010022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0020022 /* Assets.xcassets */; };
+		A0010024 /* Services/DiagnosticLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020024 /* Services/DiagnosticLog.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0030001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0060001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0040001;
+			remoteInfo = IcelandTourGuide;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0020001 /* IcelandTourGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcelandTourGuideApp.swift; sourceTree = "<group>"; };
+		A0020002 /* Models/GuideModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/GuideModels.swift; sourceTree = "<group>"; };
+		A0020003 /* Data/TripData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data/TripData.swift; sourceTree = "<group>"; };
+		A0020004 /* Services/POIEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/POIEngine.swift; sourceTree = "<group>"; };
+		A0020005 /* Services/LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/LocationManager.swift; sourceTree = "<group>"; };
+		A0020006 /* Services/BackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/BackendClient.swift; sourceTree = "<group>"; };
+		A0020007 /* Services/NarrationCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/NarrationCache.swift; sourceTree = "<group>"; };
+		A0020008 /* Services/AudioGuideService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/AudioGuideService.swift; sourceTree = "<group>"; };
+		A0020009 /* Services/VoiceQuestionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/VoiceQuestionService.swift; sourceTree = "<group>"; };
+		A0020010 /* ViewModels/TourGuideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/TourGuideViewModel.swift; sourceTree = "<group>"; };
+		A0020011 /* Views/DriveModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/DriveModeView.swift; sourceTree = "<group>"; };
+		A0020012 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		A0020013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0020014 /* IcelandTourGuide.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IcelandTourGuide.entitlements; sourceTree = "<group>"; };
+		A0020015 /* POIEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIEngineTests.swift; sourceTree = "<group>"; };
+		A0020016 /* NarrationCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarrationCacheTests.swift; sourceTree = "<group>"; };
+		A0020017 /* IcelandTourGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IcelandTourGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0020018 /* IcelandTourGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IcelandTourGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0020019 /* BackendClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendClientTests.swift; sourceTree = "<group>"; };
+		A0020020 /* Services/RealtimeGuideService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/RealtimeGuideService.swift; sourceTree = "<group>"; };
+		A0020021 /* Services/GoogleNavigationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/GoogleNavigationService.swift; sourceTree = "<group>"; };
+		A0020022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0020024 /* Services/DiagnosticLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/DiagnosticLog.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0050001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0010017 /* WebRTC in Frameworks */,
+				A0010018 /* GoogleMaps in Frameworks */,
+				A0010019 /* GoogleNavigation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0050002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0070001 = {
+			isa = PBXGroup;
+			children = (
+				A0070002 /* IcelandTourGuide */,
+				A0070003 /* IcelandTourGuideTests */,
+				A0070004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0070002 /* IcelandTourGuide */ = {
+			isa = PBXGroup;
+			children = (
+				A0020001 /* IcelandTourGuideApp.swift */,
+				A0020012 /* AppConfiguration.swift */,
+				A0020002 /* Models/GuideModels.swift */,
+				A0020003 /* Data/TripData.swift */,
+				A0020004 /* Services/POIEngine.swift */,
+				A0020005 /* Services/LocationManager.swift */,
+				A0020006 /* Services/BackendClient.swift */,
+				A0020007 /* Services/NarrationCache.swift */,
+				A0020008 /* Services/AudioGuideService.swift */,
+				A0020009 /* Services/VoiceQuestionService.swift */,
+				A0020020 /* Services/RealtimeGuideService.swift */,
+				A0020021 /* Services/GoogleNavigationService.swift */,
+				A0020024 /* Services/DiagnosticLog.swift */,
+				A0020010 /* ViewModels/TourGuideViewModel.swift */,
+				A0020011 /* Views/DriveModeView.swift */,
+				A0020022 /* Assets.xcassets */,
+				A0020013 /* Info.plist */,
+				A0020014 /* IcelandTourGuide.entitlements */,
+			);
+			path = IcelandTourGuide;
+			sourceTree = "<group>";
+		};
+		A0070003 /* IcelandTourGuideTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0020015 /* POIEngineTests.swift */,
+				A0020016 /* NarrationCacheTests.swift */,
+				A0020019 /* BackendClientTests.swift */,
+			);
+			path = IcelandTourGuideTests;
+			sourceTree = "<group>";
+		};
+		A0070004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0020017 /* IcelandTourGuide.app */,
+				A0020018 /* IcelandTourGuideTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0040001 /* IcelandTourGuide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0090001 /* Build configuration list for PBXNativeTarget "IcelandTourGuide" */;
+			buildPhases = (
+				A0080001 /* Sources */,
+				A0050001 /* Frameworks */,
+				A0080002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IcelandTourGuide;
+			packageProductDependencies = (
+				A0120001 /* WebRTC */,
+				A0120002 /* GoogleMaps */,
+				A0120003 /* GoogleNavigation */,
+			);
+			productName = IcelandTourGuide;
+			productReference = A0020017 /* IcelandTourGuide.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0040002 /* IcelandTourGuideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0090002 /* Build configuration list for PBXNativeTarget "IcelandTourGuideTests" */;
+			buildPhases = (
+				A0080003 /* Sources */,
+				A0050002 /* Frameworks */,
+				A0080004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0030002 /* PBXTargetDependency */,
+			);
+			name = IcelandTourGuideTests;
+			productName = IcelandTourGuideTests;
+			productReference = A0020018 /* IcelandTourGuideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0060001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A0040001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					A0040002 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = A0040001;
+					};
+				};
+			};
+			buildConfigurationList = A0090003 /* Build configuration list for PBXProject "IcelandTourGuide" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0070001;
+			packageReferences = (
+				A0110001 /* XCRemoteSwiftPackageReference "WebRTC" */,
+				A0110002 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+				A0110003 /* XCRemoteSwiftPackageReference "ios-navigation-sdk" */,
+			);
+			productRefGroup = A0070004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0040001 /* IcelandTourGuide */,
+				A0040002 /* IcelandTourGuideTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0080002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0010022 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0080004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0080001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0010001 /* IcelandTourGuideApp.swift in Sources */,
+				A0010002 /* Models/GuideModels.swift in Sources */,
+				A0010003 /* Data/TripData.swift in Sources */,
+				A0010004 /* Services/POIEngine.swift in Sources */,
+				A0010005 /* Services/LocationManager.swift in Sources */,
+				A0010006 /* Services/BackendClient.swift in Sources */,
+				A0010007 /* Services/NarrationCache.swift in Sources */,
+				A0010008 /* Services/AudioGuideService.swift in Sources */,
+				A0010009 /* Services/VoiceQuestionService.swift in Sources */,
+				A0010016 /* Services/RealtimeGuideService.swift in Sources */,
+				A0010021 /* Services/GoogleNavigationService.swift in Sources */,
+				A0010024 /* Services/DiagnosticLog.swift in Sources */,
+				A0010010 /* ViewModels/TourGuideViewModel.swift in Sources */,
+				A0010011 /* Views/DriveModeView.swift in Sources */,
+				A0010012 /* AppConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0080003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0010013 /* POIEngineTests.swift in Sources */,
+				A0010014 /* NarrationCacheTests.swift in Sources */,
+				A0010015 /* BackendClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0030002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0040001 /* IcelandTourGuide */;
+			targetProxy = A0030001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A0100001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = IcelandTourGuide/IcelandTourGuide.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39VH825LQW;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				GOOGLE_MAPS_API_KEY = "";
+				GOOGLE_MAPS_EMBED_API_KEY = "";
+				INFOPLIST_FILE = IcelandTourGuide/Info.plist;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.waytale;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A0100002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = IcelandTourGuide/IcelandTourGuide.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39VH825LQW;
+				GENERATE_INFOPLIST_FILE = NO;
+				GOOGLE_MAPS_API_KEY = "";
+				GOOGLE_MAPS_EMBED_API_KEY = "";
+				INFOPLIST_FILE = IcelandTourGuide/Info.plist;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.waytale;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A0100003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.waytaleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IcelandTourGuide.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IcelandTourGuide";
+			};
+			name = Debug;
+		};
+		A0100004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.waytaleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IcelandTourGuide.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IcelandTourGuide";
+			};
+			name = Release;
+		};
+		A0100005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0100006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0090001 /* Build configuration list for PBXNativeTarget "IcelandTourGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0100001 /* Debug */,
+				A0100002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0090002 /* Build configuration list for PBXNativeTarget "IcelandTourGuideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0100003 /* Debug */,
+				A0100004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0090003 /* Build configuration list for PBXProject "IcelandTourGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0100005 /* Debug */,
+				A0100006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A0110001 /* XCRemoteSwiftPackageReference "WebRTC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stasel/WebRTC";
+			requirement = {
+				kind = exactVersion;
+				version = 126.0.0;
+			};
+		};
+		A0110002 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 10.13.0;
+			};
+		};
+		A0110003 /* XCRemoteSwiftPackageReference "ios-navigation-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-navigation-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 10.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A0120001 /* WebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0110001 /* XCRemoteSwiftPackageReference "WebRTC" */;
+			productName = WebRTC;
+		};
+		A0120002 /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0110002 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
+		};
+		A0120003 /* GoogleNavigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0110003 /* XCRemoteSwiftPackageReference "ios-navigation-sdk" */;
+			productName = GoogleNavigation;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A0060001 /* Project object */;
+}
