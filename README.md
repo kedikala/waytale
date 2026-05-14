@@ -127,7 +127,3 @@ For the iOS Simulator, `http://localhost:3000` can point at the local backend. F
 - Outdoor adventure guides that combine route context with safety alerts.
 - Accessibility-focused travel narration for hands-free exploration.
 - Concierge-style trip assistants for hotels, tour companies, and travel creators.
-
-## License
-
-This project is currently marked `UNLICENSED` in `package.json`. Add a license before accepting outside contributions or publishing for reuse.
