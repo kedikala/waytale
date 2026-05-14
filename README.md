@@ -4,16 +4,40 @@ Waytale is an AI-powered road-trip voice guide for Iceland. It combines a native
 
 The app is built for a June 27-July 3, 2026 Iceland itinerary, but the architecture is meant to be reusable for other guided trips. The iOS app keeps secrets off-device and calls the backend for AI features, while the backend combines curated trip data, nearby points of interest, official feeds, and OpenAI models into spoken guidance.
 
+![Waytale realtime driving demo](assets/waytale-demo.gif)
+
+## Origin
+
+Waytale came from planning a detailed Iceland road trip and wanting something more useful than a static itinerary or generic map app. The goal was to build a trip copilot that could ride along, know the route, understand the day plan, speak at the right moments, answer passenger questions, and pull in current road, weather, and safety context without exposing API keys on the phone.
+
 ## What It Does
 
 - Provides GPS-aware audio narration for relevant itinerary stops and nearby points of interest.
 - Lets passengers ask spoken questions through Waytale while driving.
-- Uses OpenAI Realtime sessions for live conversational guidance.
+- Uses OpenAI Realtime 2 sessions for live conversational guidance.
 - Generates text-to-speech narration and caches playback on device.
 - Transcribes passenger audio questions through the backend.
 - Shows in-app route, place search, and destination selection with Google Maps and Places APIs.
 - Uses curated Iceland itinerary data, POIs, road legs, and safety notes.
 - Pulls official-style context for weather, wind, road disruptions, volcano status, and safety alerts.
+
+## Realtime Trip Copilot
+
+The backend creates short-lived client secrets for OpenAI Realtime and configures `gpt-realtime-2` as the default live voice model. In the app, this powers the Waytale Live session: a passenger can ask natural follow-ups while the drive is happening, and the model can call backend tools instead of relying only on general knowledge.
+
+Available Realtime tools include:
+
+- `get_current_context`: GPS position, active itinerary day, nearest stop, active drive leg, nearby POIs, and alerts.
+- `get_itinerary_stop`: details for a planned stop or the next stop in the current day.
+- `get_nearby_pois`: curated narration candidates around the current route.
+- `get_weather_and_wind`: nearby official-style road weather and wind context.
+- `get_road_disruptions`: road notifications and route condition context.
+- `get_volcano_status`: Reykjanes, Sundhnúkur, Grindavík, eruption, gas, and lava-field callouts.
+- `get_safety_alerts`: safety alerts from travel/weather/road feeds.
+- `ask_with_web_search`: escalates questions that need fresh or broader information.
+- `end_realtime_session`: closes the live voice session only when the passenger explicitly asks.
+
+For the Iceland trip, that means Waytale can answer questions like what you are passing, whether wind or road conditions matter, what the next stop is, why a lava field or glacier is important, or whether a route decision should be checked against official guidance.
 
 ## Tech Stack
 
@@ -33,7 +57,7 @@ The app is built for a June 27-July 3, 2026 Iceland itinerary, but the architect
 - TypeScript.
 - OpenAI APIs:
   - Responses API for question answering and web-search-backed answers.
-  - Realtime API client-secret endpoint for live voice sessions.
+  - Realtime API client-secret endpoint for `gpt-realtime-2` live voice sessions.
   - Audio speech endpoint for TTS.
   - Audio transcription endpoint for voice questions.
 - Curated TypeScript data files for itinerary stops, POIs, and drive legs.
